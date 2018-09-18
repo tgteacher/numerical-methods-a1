@@ -1,0 +1,20 @@
+dist: trusty
+language: python
+
+python:
+- 3.5 # This is the version available in the classroom
+
+env:
+- ASSIGNMENT_REPO=https://github.com/tgteacher/numerical-methods-a1.git
+
+before_install:
+- \mv -f tests tests.old # I saw you modifying the tests to make them pass :)
+- mkdir tests ; (cd vanilla_tests ; git clone ${ASSIGNMENT_REPO}})
+
+install:
+- pip install --upgrade setuptools
+- pip install pytest pytest-runner
+- pip install numpy
+
+script:
+- pytest vanilla_tests/tests/test_*.py
