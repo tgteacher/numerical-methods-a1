@@ -10,6 +10,7 @@ env:
 before_install:
 - \mv -f tests tests.old # I saw you modifying the tests to make them pass :)
 - mkdir vanilla_tests ; (cd vanilla_tests ; git clone $ASSIGNMENT_REPO )
+- ls vanilla_tests -R
 
 install:
 - pip install --upgrade setuptools
