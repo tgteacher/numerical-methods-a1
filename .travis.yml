@@ -17,4 +17,4 @@ install:
 - pip install numpy
 
 script:
-- pytest vanilla_tests/numerical-methods-a1/tests/test_*.py
+- PYTHONPATH=. pytest vanilla_tests/numerical-methods-a1/tests/test_*.py
