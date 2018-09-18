@@ -84,7 +84,7 @@ def fit_poly(points):
   Part 3: Tridiagonal systems
 '''
 
-def tridiag_solver_n(n)
+def tridiag_solver_n(n):
     '''
       Task: This function returns the solution of the following tridiagonal equations:
             4x[1] - x[2] = 9

@@ -1,48 +1,60 @@
-# A1: Python intro, linear algebra recap, and linear algebraic equations.
+# A1: Systems of Linear Algebraic Equations
 
-This repository is private in order to (1) encourage you to experiment
-various solutions without the fear of making mistakes publicly (2)
-discourage plagiarism, unauthorized collaboration and other offences
-under Concordia's [Academic Code of Conduct](http://www.concordia.ca/students/academic-integrity/offences.html). You are encouraged to
-discuss and exchange solutions during the tutorial sessions or on Slack, but you are
-*not allowed* to share code electronically.
+
+## Note
+
+This assignment must be submitted individually. You are encouraged to 
+discuss and exchange solutions during the tutorial sessions or on 
+Slack, but you are *not allowed* to share code electronically. 
+Plagiarism, unauthorized collaboration and other offences under 
+Concordia's [Academic Code of Conduct](http://www.concordia.ca/students/academic-integrity/offences.html) will be firmly handled. 
 
 ## Assignment submission
 
+Assignments are submitted through GitHub classroom.
+
 To prepare and submit your assignment, you will:
-1. Ask your TA to give you access to the repository.
-2. Fork the repository on GitHub.
-3. In the settings of your fork, remove all contributors except (1) the course coordinator (username: `glatard`) (2) your TA. Failure to do so will be considered [unauthorized collaboration](http://www.concordia.ca/students/academic-integrity/offences.html) under Concordia's Academic Code of Conduct.
-4. Clone your fork and implement the assignment (see [specific instructions](./ASSIGNMENT.md)).
-5. Commit and push your solution to your fork.
-6. Release your fork on GitHub by the assignment due date. Any commit made after the due date will not be considered. 
+1. Accept the assignment in GitHub classroom. This will create your own copy
+   of the assignment repo, located at http://github.com/tgteacher/COMP-361-A1-F2018-<your_github_username>.
+2. Clone your copy on your computer, and implement the functions in `a1.py`, following the instructions in the functions' documentation strings.
+3. Commit your solution to your local copy: `git add a1.py` ; `git commit`.
+4. Push your solution to your GitHub copy: `git push`.
 
-Your code will be tested with Python 3.5.1 and Apache Spark version 2.2.0. Your code will be tested on `orwell.encs.concordia.ca` (a computer representative of the lab workstations) after the following modules were loaded:
-* `module load spark`
-* `module load python/3.5.1`
+You can repeat steps 3 and 4 as many times as you wish. A snapshot of 
+your repository will be taken on the due date for evaluation.
 
-Important note: you are not supposed to make a pull request from your
-fork to the TA's one. Doing so will result in your code being made
-publicly available among the other students, which will also be
-considered [unauthorized
-collaboration](http://www.concordia.ca/students/academic-integrity/offences.html)
-under Concordia's Academic Code of Conduct.
+## Evaluation
 
-## Specific instructions
+### Grading
 
-Specific instructions to complete this assignment are available [here](./ASSIGNMENT.md).
+Your assignment will be automatically graded through software tests. 
 
-## Grading
+Half of the tests are available to you, located in directory `tests`. You
+may want to run them before the submission deadline, to check that your
+solution complies to them. To do so, you will have to install `pytest` and simply
+run `pytest tests` in the base directory. 
 
-To grade your assignment, your TA will:
-1. Clone the latest release of your forked GitHub repository.
-2. Source the `env.sh` script: `source answers/env.sh`. Feel free to add any setup step to this script (e.g. if your solution requires environment variables).
-3. Install any dependency with `pip install -r requirements.txt --user`.
-4. Add undisclosed tests to directory `test`.
-5. Run `pytest`.
+Half of the tests will remain undisclosed until after the submission deadline.
+Undisclosed tests are meant to ensure that your solution doesn't hard code the
+specific values used in the tests. Undisclosed tests will look very similar to the
+disclosed ones.
 
 Your grade will be determined from the number of passing tests as
-returned by pytest. For instance, if 11 tests have passed out of 13,
-your grade will be 84.6%.
+returned by pytest. All tests will contribution equally to the final grade for this 
+assignment. For instance, if 20 tests are evaluated (including disclosed and undisclosed ones),
+and your solution passes 18 tests, then your grade will be 90%.
 
-You may want to run `pytest` in your fork to check the tests beforehand. To do that, you will have to install `pytest` using `pip install --user pytest ; setenv PATH ${PATH}:${HOME}/.local/bin`
+### Test environment and live feedback.
+
+Your code will be tested with Python 3.5 in a Ubuntu environment. If 
+needed, Python 3.5 is available in the computer labs and can be loaded 
+using `module load python/3.5.1`. You can check the version of Python that
+you are using by running `python --version`.
+
+It is strongly suggested that you run the disclosed tests before 
+submitting your assignment, using `pytest` as explained previously. 
+
+In addition, live feedback on your assignment is provided by Travis CI 
+[here](https://travis-ci.com/tgteacher) (you will have to sign-in using your GitHub account to see your 
+assignment repository).
+
