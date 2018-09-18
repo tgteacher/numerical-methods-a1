@@ -9,8 +9,7 @@ env:
 
 before_install:
 - \mv -f tests tests.old # I saw you modifying the tests to make them pass :)
-- mkdir vanilla_tests ; (cd vanilla_tests ; git clone $ASSIGNMENT_REPO )
-- ls vanilla_tests -R
+- mkdir vanilla_tests && (cd vanilla_tests ; git clone $ASSIGNMENT_REPO )
 
 install:
 - pip install --upgrade setuptools
@@ -18,4 +17,4 @@ install:
 - pip install numpy
 
 script:
-- pytest vanilla_tests/tests/test_*.py
+- pytest vanilla_tests/numerical-methods-a1/tests/test_*.py
