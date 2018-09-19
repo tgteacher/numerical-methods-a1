@@ -26,7 +26,7 @@ and clone it using `git clone <repo_url>`.
 ## Assignment submission
 
 You have to submit your assignment through GitHub classroom, using the following procedure:
-1. Once you receive the GitHub classroom link for the assignment, accept the assignment in GitHub classroom. This will create your own copy
+1. Once you receive the GitHub classroom link for the assignment (https://classroom.github.com/a/tQkTwsFF), accept the assignment in GitHub classroom. This will create your own copy
    of the assignment repository, located at http://github.com/tgteacher/COMP-361-A1-F2018-<your_github_username>.
 2. Clone your copy of the assignment repository on your computer, and 
 implement the functions in `a1.py`, following the instructions in the 
