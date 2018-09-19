@@ -23,6 +23,7 @@ and clone it using `git clone <repo_url>`.
 2. *Commit* modifications to a local clone of a Git repository: `git add <file>` and `git commit -m "message"`.
 3. *Push* modifications from your local clone to the origin repository on GitHub: `git push`.
 
+
 ## Assignment submission
 
 You have to submit your assignment through GitHub classroom, using the following procedure:
@@ -33,6 +34,10 @@ implement the functions in `a1.py`, following the instructions in the
 documentation strings.
 3. Commit your solution to your local copy of the assignment repository.
 4. Push your solution to your GitHub copy of the assignment repository.
+
+**Important**: please make sure that the email address you use in Moodle is
+added to your GitHub account (you can add multiple addresses to your 
+GitHub account).
 
 You can repeat steps 3 and 4 as many times as you wish. Your assignment 
 will be graded based on a snapshot of your repository taken on the 
