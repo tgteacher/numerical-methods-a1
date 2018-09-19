@@ -5,6 +5,7 @@ from numpy import *
    PART 1: Warm-up
 '''
 
+
 def example_func():
     '''
       Important: READ THIS CAREFULLY. 
@@ -13,7 +14,7 @@ def example_func():
       Test: This function is is tested in tests/test_example.py
             This test just gives you a bonus, yay!
       Hint: The functions below have to be implemented in Python, without
-            using any function from numpy.linalg. In each function, a
+            using any function from numpy's linear algebra module. In each function, a
             docstring formatted as the present one explains what the 
             function must do (Task), gives an example of output 
             (Example), explains how it will be evaluated (Test), and 
@@ -33,6 +34,8 @@ def square(a):
     '''
 
     ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
+
 
 '''
   Part 2: Resolution of linear systems for polynomial interpolation
@@ -40,7 +43,7 @@ def square(a):
 
 
 def fit_poly_2(points):
-      '''
+    '''
       Task: This function finds a polynomial P of degree 2 that passes 
             through the 3 points contained in list 'points'. It returns a numpy
             array containing the coefficient of a polynomial P: array([a0, a1, a2]),
@@ -53,10 +56,11 @@ def fit_poly_2(points):
     '''
 
     ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
 
 
 def fit_poly(points):
-      '''
+    '''
       Task: This function is a generalization of the previous one. It 
             finds a polynomial P of degree n that passes 
             through the n+1 points contained in list 'points'. It 
@@ -78,6 +82,7 @@ def fit_poly(points):
     '''
 
     ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
 
 
 '''
@@ -100,7 +105,8 @@ def tridiag_solver_n(n):
       Test: This function is is tested by the function in tests/test_tridiag_solver.py.
     '''
 
-      ## YOUR CODE GOES HERE
+    ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
 
 
 '''
@@ -108,7 +114,7 @@ def tridiag_solver_n(n):
 '''
 
 def gauss_multiple(a, b):
-      '''
+    '''
       Task: This function returns the solution of the system written as
             AX=B, where A is an n x n square matrix, and X and B are n x m matrices.
             It is equivalent to solving m systems of the form Ax=b, where
@@ -119,17 +125,30 @@ def gauss_multiple(a, b):
             tests should work in both cases).
       Parameters: a is a numpy array representing a square matrix. b is a numpy
             array representing a matrix with as many lines as in a.
-      Test: This function is is tested by the following functions in tests/test_gauss_multiple.py:
-            - test_gauss_multiple tests a basic resolution
-            - test_gauss_multiple_pivot tests a resolution where pivoting is required
+      Test: This function is is tested by the function test_gauss_multiple in tests/test_gauss_multiple.py.
       Hint: Start from the implementation shown in the course!
     '''
 
     ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
+
+
+def gauss_multiple_pivot(a, b):
+    '''
+      Task: This function returns the same result as the previous one,
+            except that it uses scaled row pivoting.
+      Parameters: a is a numpy array representing a square matrix. b is a numpy
+            array representing a matrix with as many lines as in a.
+      Test: This function is is tested by the function 
+            test_gauss_multiple_pivot in tests/test_gauss_multiple.py.
+    '''
+
+    ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
 
 
 def matrix_invert(a):
-      '''
+    '''
       Task: This function returns the inverse of the square matrix a passed 
             as a paramter. 
       Parameters: a is a numpy array representing a non-singular square matrix.
@@ -139,3 +158,4 @@ def matrix_invert(a):
     '''
 
     ## YOUR CODE GOES HERE
+    raise Exception("Function not implemented")
