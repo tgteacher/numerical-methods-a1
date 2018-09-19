@@ -30,7 +30,7 @@ def square(a):
       Parameters: a is a numpy array.
       Example: square(array([[1, 2], [3, 4]])) must return True.
       Test: This function is is tested in tests/test_square.py
-      Hint: Use numpy's share function.
+      Hint: Use numpy's shape function.
     '''
 
     ## YOUR CODE GOES HERE
