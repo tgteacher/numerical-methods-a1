@@ -66,9 +66,10 @@ will be 90%.
 
 ### Test environment and live feedback.
 
-Your code will be tested with Python 3.5 in a Ubuntu environment. It is 
-your responsibility to ensure that the tests will pass in this 
-environment. The following resources will help you ensure that.
+Your code will be tested with Python 3.5 in a Ubuntu environment 
+provided by Travis CI. It is your responsibility to ensure that the 
+tests will pass in this environment. The following resources will help 
+you.
 
 Python 3.5 is available in the computer labs and can be loaded using 
 `module load python/3.5.1`. You can check the version of Python that 
@@ -80,5 +81,7 @@ submitting your assignment, using `pytest` as explained previously.
 
 Live feedback on your assignment is provided through Travis CI 
 [here](https://travis-ci.com/tgteacher). You will have to sign-in using 
-your GitHub account to see your assignment repository.
+your GitHub account to see your assignment repository. **Your grade will be determined 
+from the result of the
+tests executed in Travis CI**.
 
