@@ -15,7 +15,8 @@ To submit this assignment, you will have to be familiar with Git and
 GitHub. If you have never used these technologies, it is recommended to 
 go through the following tutorials:
 * [Git](https://rogerdudler.github.io/git-guide)
-* [GitHub](https://try.github.io)
+* [GitHub](https://guides.github.com/)
+
 In particular, you will have to be able to:
 1. /Clone/ a Git repository from GitHub: find the URL of a GitHub repository
 and clone it using `git clone <repo_url>`.
