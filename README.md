@@ -18,10 +18,10 @@ go through the following tutorials:
 * [GitHub](https://guides.github.com/)
 
 In particular, you will have to be able to:
-1. /Clone/ a Git repository from GitHub: find the URL of a GitHub repository
+1. *Clone* a Git repository from GitHub: find the URL of a GitHub repository
 and clone it using `git clone <repo_url>`.
-2. /Commit/ modifications to a local clone of a Git repository: `git add <file>` and `git commit -m "message"`.
-3. /Push/ modifications from your local clone to the origin repository on GitHub: `git push`.
+2. *Commit* modifications to a local clone of a Git repository: `git add <file>` and `git commit -m "message"`.
+3. *Push* modifications from your local clone to the origin repository on GitHub: `git push`.
 
 ## Assignment submission
 
@@ -38,8 +38,8 @@ You can repeat steps 3 and 4 as many times as you wish. Your assignment
 will be graded based on a snapshot of your repository taken on the 
 submission deadline.
 
-Note that *you are not allowed to use functions from 
-`numpy.linalg` to implement this assignment*.
+Note that **you are not allowed to use functions from 
+`numpy.linalg` to implement this assignment**.
 
 
 ## Evaluation
