@@ -37,6 +37,10 @@ You can repeat steps 3 and 4 as many times as you wish. Your assignment
 will be graded based on a snapshot of your repository taken on the 
 submission deadline.
 
+Note that *you are not allowed to use functions from 
+`numpy.linalg` to implement this assignment*.
+
+
 ## Evaluation
 
 ### Grading
@@ -53,9 +57,11 @@ Undisclosed tests are meant to ensure that your solution doesn't hard code the
 specific values used in the tests. Undisclosed tests will look very similar to the
 disclosed ones.
 
-Your grade will be determined from the number of passing tests as
-returned by pytest. All tests will contribute equally to the final grade. For instance, if 20 tests are evaluated (including disclosed and undisclosed ones),
-and your solution passes 18 tests, then your grade will be 90%.
+Your grade will be determined from the number of passing tests as 
+returned by pytest. All tests will contribute equally to the final 
+grade. For instance, if 20 tests are evaluated (including disclosed and 
+undisclosed ones), and your solution passes 18 tests, then your grade 
+will be 90%.
 
 ### Test environment and live feedback.
 

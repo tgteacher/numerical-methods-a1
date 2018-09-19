@@ -1,7 +1,9 @@
 from numpy import *
 from a1 import *
+from test_utils import *
 
 def test_gauss_multiple():
+    check_linalg()
     a = array([[6, 4, 1], [-4, 6, -4], [1, -4, 6]], dtype=float_)
     b = array([[-14, 22], [36, -18], [6, 7]], dtype=float_)
     gauss_multiple(a, b) # result is now in b
@@ -13,6 +15,7 @@ def test_gauss_multiple():
     assert(sum(abs(solution - b)) < epsilon)
 
 def test_gauss_multiple_pivot():
+    check_linalg()
     a = array([[0, 4, 1], [-4, 6, -4], [1, -4, 6]], dtype=float_)
     b = array([[-14, 22], [36, -18], [6, 7]], dtype=float_)
     gauss_multiple_pivot(a, b) # result is now in b
