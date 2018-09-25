@@ -11,7 +11,7 @@ def test_fit_poly_2():
     solution[0] = -1
     solution[1] = 2
     solution[2] = -3
-    assert array_equal(solution, coeffs)
+    assert allclose(solution, coeffs)
 
 def test_fit_poly():
     check_linalg()
@@ -22,7 +22,7 @@ def test_fit_poly():
     solution[1] = -1
     solution[2] = 4
     solution[3] = 1
-    assert array_equal(solution, coeffs)
+    assert allclose(solution, coeffs)
 
 def test_fit_poly_raises():
     check_linalg()
@@ -51,5 +51,5 @@ def test_fit_poly_n():
     for i in range(n+1):
         points.append((i, eval_poly(solution, i)))
     coeffs = fit_poly(points)
-    assert array_equal(solution, coeffs)
+    assert allclose(solution, coeffs)
 
