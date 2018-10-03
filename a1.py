@@ -51,7 +51,11 @@ def fit_poly_2(points):
             verify y = a0 + a1*x + a2*x**2.
       Parameters: points is a Python list of 3 pairs representing 2D points.
       Example: fit_poly_2([(0, -1), (1, -2), (2, -9)]) must return array([-1, 2, 3])
-      Test: This function is is tested by function test_fit_poly_2 in tests/test_fit_poly.py
+      Test: This function is is tested by the following functions in tests/test_fit_poly.py:
+            - test_fit_poly_2 tests a basic fit
+            - test_fit_poly_raises tests that the function raises an 
+              AssertionError when the polynomial cannot be fit (for 
+              instance, 3 points are aligned).
       Hint: This should be done by solving a linear system.
     '''
 
@@ -74,9 +78,6 @@ def fit_poly(points):
                 (1, 6), (2, 24), (3, 62)]) must return array([2, -1, 4, 1])
       Test: This function is is tested by the following functions in tests/test_fit_poly.py:
             - test_fit_poly tests a basic fit
-            - test_fit_poly_raises tests that the function raises an 
-              AssertionError when the polynomial cannot be fit (for 
-              instance, 3 points are aligned).
             - test_fit_poly_n tests the fit on a random polynomial of degre <= 6.
       Hint: This should be done by solving a linear system.
     '''
