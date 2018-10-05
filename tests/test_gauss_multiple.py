@@ -12,7 +12,7 @@ def test_gauss_multiple():
     from numpy.linalg import solve
     nsolution = solve(na, nb)
     epsilon = 10E-15
-    assert((sum(abs(nsolution - solution)) < epsilon) or (sum(abs(nsolution - b)) < epsilon))
+    assert((solution not None and sum(abs(nsolution - solution)) < epsilon) or (sum(abs(nsolution - b)) < epsilon))
 
 def test_gauss_multiple_pivot():
     check_linalg()
@@ -24,4 +24,4 @@ def test_gauss_multiple_pivot():
     from numpy.linalg import solve
     nsolution = solve(na, nb)
     epsilon = 10E-15
-    assert((sum(abs(nsolution - solution)) < epsilon) or (sum(abs(nsolution - b)) < epsilon))
+    assert((solution not None and sum(abs(nsolution - solution)) < epsilon) or (sum(abs(nsolution - b)) < epsilon))
