@@ -27,17 +27,13 @@ and clone it using `git clone <repo_url>`.
 ## Assignment submission
 
 You have to submit your assignment through GitHub classroom, using the following procedure:
-1. Accept the assignment at https://classroom.github.com/a/tQkTwsFF. This will create your own copy
+1. Accept the assignment at https://classroom.github.com/a/fKVCmAhq. This will create your own copy
    of the assignment repository, located at http://github.com/tgteacher/COMP-361-A1-F2018-your_github_username.
 2. Clone your copy of the assignment repository on your computer, and 
 implement the functions in `a1.py`, following the instructions in the 
 documentation strings.
 3. Commit your solution to your local copy of the assignment repository.
 4. Push your solution to your GitHub copy of the assignment repository.
-
-**Important**: please make sure that the email address you use in Moodle is
-added to your GitHub account (you can add multiple addresses to your 
-GitHub account).
 
 You can repeat steps 3 and 4 as many times as you wish. Your assignment 
 will be graded based on a snapshot of your repository taken on the 
