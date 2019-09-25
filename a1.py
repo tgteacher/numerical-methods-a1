@@ -50,7 +50,7 @@ def fit_poly_2(points):
             where P(x) = a0 + a1*x + a2*x**2. Every (x, y) in 'points' must 
             verify y = a0 + a1*x + a2*x**2.
       Parameters: points is a Python list of 3 pairs representing 2D points.
-      Example: fit_poly_2([(0, -1), (1, -2), (2, -9)]) must return array([-1, 2, 3])
+      Example: fit_poly_2([(0, -1), (1, -2), (2, -9)]) must return array([-1, 2, -3])
       Test: This function is is tested by the following functions in tests/test_fit_poly.py:
             - test_fit_poly_2 tests a basic fit
             - test_fit_poly_raises tests that the function raises an 
