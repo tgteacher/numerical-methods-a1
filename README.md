@@ -54,15 +54,9 @@ may want to run them as you implement your solution, to check that your
 code passes them. To do so, you will have to install `pytest` and simply
 run `pytest tests` in the base directory of the assignment. 
 
-Half of the tests will remain undisclosed until after the submission deadline.
-Undisclosed tests are meant to ensure that your solution doesn't hard code the
-specific values used in the tests. Undisclosed tests will look very similar to the
-disclosed ones.
-
 Your grade will be determined from the number of passing tests as 
 returned by pytest. All tests will contribute equally to the final 
-grade. For instance, if 20 tests are evaluated (including disclosed and 
-undisclosed ones), and your solution passes 18 tests, then your grade 
+grade. For instance, if 20 tests are evaluated, and your solution passes 18 tests, then your grade 
 will be 90%.
 
 ### Test environment and live feedback.
